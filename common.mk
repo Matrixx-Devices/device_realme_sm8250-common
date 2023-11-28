@@ -313,9 +313,13 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libstagefrighthw
 
-# OPlusExtras
+# build OPlusExtras
 PRODUCT_PACKAGES += \
-    OPlusExtras
+    OPlusExtras \
+
+#Build overlay    
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
     
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
