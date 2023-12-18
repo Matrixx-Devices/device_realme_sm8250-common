@@ -71,14 +71,7 @@ on post-fs
     write /dev/ipa 1
 
 on late-fs
-<<<<<<< HEAD
-    wait_for_prop hwservicemanager.ready true
-    exec_start wait_for_keymaster
-    mount_all /vendor/etc/fstab.qcom --late
-
-=======
     mount_all --late
->>>>>>> 3542f78 (sm8350-common: Remove wait_for_keymaster and all references)
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
