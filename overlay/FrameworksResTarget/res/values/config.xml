@@ -61,6 +61,9 @@
 
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
+    
+    <!-- Whether devices suports in-display fingerprint when screen is off -->
+    <bool name="config_supportScreenOffUdfps">true</bool>
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
