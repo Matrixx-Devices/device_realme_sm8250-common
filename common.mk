@@ -67,6 +67,8 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_PACKAGES += \
     DolbyManager
+    
+TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
