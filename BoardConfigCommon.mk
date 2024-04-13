@@ -102,6 +102,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_realme_kona
 TARGET_RECOVERY_DEVICE_MODULES := init_realme_kona
