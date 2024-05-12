@@ -21,27 +21,7 @@
      for different hardware and product builds. -->
 <resources>
 
-    <!-- Allow devices override audio panel location to the left side -->
-    <bool name="config_audioPanelOnLeftSide">true</bool>
+     <!-- Whether to disable Smart Pixels on UDFPS -->
+     <bool name="config_disableSmartPixelsOnUDFPS">true</bool>
 
-    <!-- Color of the UDFPS Pressed view -->
-    <color name="config_udfpsColor">#ffffe6</color>
-
-    <!-- HBM type of UDFPS overlay.
-            0 - GLOBAL HBM
-            1 - LOCAL HBM
-    -->
-    <integer name="config_udfpsHbmType">0</integer>
-
-    <!-- The battery current divider, some kernel report current value in mA other in µA.
-         Leave 1 if you have mA, put 1000 if you have µA -->
-    <integer name="config_battCurrentDivider" translatable="false">1</integer>
-
-    <!-- The CPU temperature divider, if needed -->
-    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
-
-    <!-- SystemUI flags -->
-    <bool name="flag_combined_qs_headers">true</bool>
-    <bool name="flag_umo_turbulence_noise">true</bool>
-    
 </resources>
