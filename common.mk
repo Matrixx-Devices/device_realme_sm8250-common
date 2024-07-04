@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
+    libutilscallstack.vendor \
     libvulkan
 
 PRODUCT_COPY_FILES += \
@@ -364,10 +365,13 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor:64 \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
+    libsqlite.vendor:64 \
     libvndfwk_detect_jni.qti.vendor
 
 # RIL
@@ -390,6 +394,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
 
 PRODUCT_PACKAGES += \
+    libdumpstateutil.vendor:64 \
     libsensorndkbridge \
     sensors.oplus
 
